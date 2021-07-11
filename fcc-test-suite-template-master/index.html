@@ -13,15 +13,17 @@
       <h1 id= "title">FreeCodeCamp Survey Form</h1>
       <p id="description">Survey Form About Client's satisfaction with freeCodeCamp</p>
       </div>
-    <div class="flexbox">
+      <section class="container">
+      <div class="form-box">
       <form action="" id="survey-form"></form>
       <label for="name" id = "name-label">Name</label>
       <input class ="box" type="name" placeholder="enter your name">
-      <label for="email" id = "email-label">Enter your email</label>
+      <label for="email" id = "email-label">Email</label>
       <input class ="box" type="email" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="enter your email" required>
-      <label for="number" id = "number-label">enter your number</label>
+      <label for="number" id = "number-label">Age</label>
+      </div>
       <input class ="box" type="number" pattern="^\d{3}-\d{3}-\d{4}$" min=1 max=110 placeholder="enter your age">
-      <label for="current role">Select current role:</label>
+      <label for="current role"></label>
 <p> Which option best describes your current role?</p>
 <select class ="box" name="Current role" id="dropdown" placeholder = "select current role">
   <option value="student">Student</option>
@@ -29,45 +31,46 @@
   <option value="prefer not to say">Prefer not to say</option>
   <option value="other">Other</option>
 </select>
-<select value="attribute">
-  <p>Would you recommend freeCodeCamp to a friend?</p>
-  <input type="radio" id="radio">
-  <label>Definitely</label>
-  <input type="radio" id="radio">
-  <label>Maybe</label>
-  <input type="radio" id="radio">
-  <label>Not sure</label>
-</select>
-<select name="attribute">
-  <p>What would you like to improve</p>
-  <input type="checkbox" id="checkbox">
-  <label>Front-end Projects</label>
-  <input type="checkbox" id="checkbox">
-  <label>Back-end Projects</label>
-  <input type="checkbox" id="checkbox">
-  <label>Data Visualization</label>
-  <input type="checkbox" id="checkbox">
-  <label>Challenges</label>
-  <input type="checkbox" id="checkbox">
-  <label>Open Source Community</label>
-  <input type="checkbox" id="checkbox">
-  <label>Gitter help rooms</label>
-  <input type="checkbox" id="checkbox">
-  <label>Videos</label>
-  <input type="checkbox" id="checkbox">
-  <label>City Meetups</label>
-  <input type="checkbox" id="checkbox">
-  <label>Wiki</label>
-  <input type="checkbox" id="checkbox">
-  <label>Forum</label>
-  <input type="checkbox" id="checkbox">
-  <label>Additional Courses</label>
+<div class="radio-flex">
+<p>Would you recommend freeCodeCamp to a friend?</p>
+    <div><input type="radio" id="radio">
+  <label>Definitely</label></div>
+  <div><input type="radio" id="radio">
+  <label>Maybe</label></div>
+  <div><input type="radio" id="radio">
+  <label>Not sure</label></div>
+  </div>
+  <div class="radio-flex">
+<p>What would you like to improve</p>
+  <div><input type="checkbox" id="checkbox">
+  <label>Front-end Projects</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Back-end Projects</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Data Visualization</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Challenges</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Open Source Community</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Gitter help rooms</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Videos</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>City Meetups</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Wiki</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Forum</label></div>
+  <div><input type="checkbox" id="checkbox">
+  <label>Additional Courses</label></div>
+  </div>
   <p>Any comments or suggestions?</p>
   <textarea id="text-area" name="story"
           rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
-</select>
+
 <button id="submit"></button>
-</div>
+</section>
 
 
     
