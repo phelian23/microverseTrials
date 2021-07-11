@@ -7,35 +7,69 @@
   </head>
 
   <body>
-    <div class = "intro">
-  <h1 id= "title">FreeCodeCamp Survey Form</h1>
-  <p id="description">Survey Form About Client's satisfaction with freeCodeCamp</p>
-</div>
-<section class = "form-section">
-  <form action="" id="survey-form"></form>
-  <label for="name" id = "name">Name</label>
-  <input type="name" >
-  <label for="email" id = "email">Enter your email</label>
-  <input type="email" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="enter your email" required>
-  <label for="number" id = "number">enter your number</label>
-  <input type="number" pattern="^\d{3}-\d{3}-\d{4}$">
-
-
-  
-</section>
+   
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    Hello World!
-    <!--
+      <h1 id= "title">FreeCodeCamp Survey Form</h1>
+      <p id="description">Survey Form About Client's satisfaction with freeCodeCamp</p>
+    
+      <form action="" id="survey-form"></form>
+      <label for="name" id = "name-label">Name</label>
+      <input type="name" placeholder="enter your name">
+      <label for="email" id = "email-label">Enter your email</label>
+      <input type="email" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="enter your email" required>
+      <label for="number" id = "number-label">enter your number</label>
+      <input type="number" pattern="^\d{3}-\d{3}-\d{4}$" min=1 max=110 placeholder="enter your age">
+      <label for="current role">Select current role:</label>
 
-    Hello Camper!
+<select name="Current role" id="dropdown" placeholder = "select current role">
+  <option value="student">Student</option>
+  <option value="full time job">Full time job</option>
+  <option value="prefer not to say">Prefer not to say</option>
+  <option value="other">Other</option>
+</select>
+<select value="attribute">
+  <p>Would you recommend freeCodeCamp to a friend?</p>
+  <input type="radio">
+  <label>Definitely</label>
+  <input type="radio">
+  <label>Maybe</label>
+  <input type="radio">
+  <label>Not sure</label>
+</select>
+<select name="attribute">
+  <p>What would you like to improve</p>
+  <input type="checkbox">
+  <label>Front-end Projects</label>
+  <input type="checkbox">
+  <label>Back-end Projects</label>
+  <input type="checkbox">
+  <label>Data Visualization</label>
+  <input type="checkbox">
+  <label>Challenges</label>
+  <input type="checkbox">
+  <label>Open Source Community</label>
+  <input type="checkbox">
+  <label>Gitter help rooms</label>
+  <input type="checkbox">
+  <label>Videos</label>
+  <input type="checkbox">
+  <label>City Meetups</label>
+  <input type="checkbox">
+  <label>Wiki</label>
+  <input type="checkbox">
+  <label>Forum</label>
+  <input type="checkbox">
+  <label>Additional Courses</label>
+  <p>Any comments or suggestions?</p>
+  <textarea id="text-area" name="story"
+          rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+</select>
+<button id="submit"></button>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
 
-    - The freeCodeCamp Team
+    
+      
 
     -->
     <script  src="js/index.js"></script>
