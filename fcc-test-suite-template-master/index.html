@@ -8,21 +8,22 @@
 
   <body>
    
-
+  <div class = "intro">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
       <h1 id= "title">FreeCodeCamp Survey Form</h1>
       <p id="description">Survey Form About Client's satisfaction with freeCodeCamp</p>
-    
+      </div>
+    <div class="flexbox">
       <form action="" id="survey-form"></form>
       <label for="name" id = "name-label">Name</label>
-      <input type="name" placeholder="enter your name">
+      <input class ="box" type="name" placeholder="enter your name">
       <label for="email" id = "email-label">Enter your email</label>
-      <input type="email" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="enter your email" required>
+      <input class ="box" type="email" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="enter your email" required>
       <label for="number" id = "number-label">enter your number</label>
-      <input type="number" pattern="^\d{3}-\d{3}-\d{4}$" min=1 max=110 placeholder="enter your age">
+      <input class ="box" type="number" pattern="^\d{3}-\d{3}-\d{4}$" min=1 max=110 placeholder="enter your age">
       <label for="current role">Select current role:</label>
-
-<select name="Current role" id="dropdown" placeholder = "select current role">
+<p> Which option best describes your current role?</p>
+<select class ="box" name="Current role" id="dropdown" placeholder = "select current role">
   <option value="student">Student</option>
   <option value="full time job">Full time job</option>
   <option value="prefer not to say">Prefer not to say</option>
@@ -30,42 +31,43 @@
 </select>
 <select value="attribute">
   <p>Would you recommend freeCodeCamp to a friend?</p>
-  <input type="radio">
+  <input type="radio" id="radio">
   <label>Definitely</label>
-  <input type="radio">
+  <input type="radio" id="radio">
   <label>Maybe</label>
-  <input type="radio">
+  <input type="radio" id="radio">
   <label>Not sure</label>
 </select>
 <select name="attribute">
   <p>What would you like to improve</p>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Front-end Projects</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Back-end Projects</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Data Visualization</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Challenges</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Open Source Community</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Gitter help rooms</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Videos</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>City Meetups</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Wiki</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Forum</label>
-  <input type="checkbox">
+  <input type="checkbox" id="checkbox">
   <label>Additional Courses</label>
   <p>Any comments or suggestions?</p>
   <textarea id="text-area" name="story"
           rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
 </select>
 <button id="submit"></button>
+</div>
 
 
     
